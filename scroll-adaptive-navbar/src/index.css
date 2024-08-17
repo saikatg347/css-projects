@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@layer reset {
+  /* Standard CSS Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+@layer base {
+  :root {
+    --primary-color: #845ec2;
+    --secondary-color: #b39cd0;
+    --light-color: #fbeaff;
+
+    /* --primary-color-100: #faccff;
+    --primary-color-200: #dcb0ff;
+    --primary-color-300: #be93fd;
+    --primary-color-500: #a178df;
+    --primary-color-700: #845ec2; */
+  }
+
+  body {
+    background: var(--light-color);
+  }
+
+  section {
+    padding: 150px 50px;
+
+    & h2 {
+      font-size: 3em;
+      line-height: 1em;
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+    }
+
+    & p {
+      font-style: 1.05em;
+    }
+  }
+}
