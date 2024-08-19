@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Useful Html Tags</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- abbreviation tag -->
+      <div class="wrapper">
+        <abbr title="Info about this icon">Icon</abbr>
+      </div>
+
+      <!-- code tag -->
+      <div class="wrapper">
+        <p>This is a code tag</p>
+        <code> int main() { cout << "hello world"; } </code>
+      </div>
+
+      <!-- datalist + option tag -->
+      <div class="wrapper">
+        <input
+          type="input"
+          list="colors"
+        />
+        <datalist id="colors">
+          <option value="cat"></option>
+          <option value="dog"></option>
+          <option value="cow"></option>
+          <option value="car"></option>
+          <option value="duck"></option>
+          <option value="horse"></option>
+        </datalist>
+      </div>
+
+      <!-- dialog tag -->
+      <div class="wrapper">
+        <dialog open="">
+          <p>this is a dialog</p>
+          <button
+            class=""
+            onclick="handleDialogClose()"
+          >
+            click
+          </button>
+        </dialog>
+      </div>
+
+      <!-- details summery tag -->
+      <details>
+        <summary>this is the summery</summary>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, aut.
+      </details>
+
+      <!-- fieldset tag -->
+      <fieldset>
+        <legend>Name</legend>
+        <input
+          type="text"
+          class="fieldset-input"
+        />
+      </fieldset>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

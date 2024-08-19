@@ -1,0 +1,48 @@
+* > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapper {
+  padding: 10px 20px;
+}
+
+dialog {
+  inset: 0;
+  margin: auto;
+  width: 24rem;
+  height: 10rem;
+  border: none;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+fieldset {
+  padding: 5px;
+  border-radius: 5px;
+
+  legend {
+    color: gray;
+  }
+}
+
+.fieldset-input {
+  border: none;
+  outline: none;
+}
